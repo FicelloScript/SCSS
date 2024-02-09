@@ -1,4 +1,5 @@
 $pink : #DF80AC;
+$font20 : 20px;
 
 @font-face {
     font-family: 'Bison'; 
@@ -58,7 +59,7 @@ header {
     border-radius: 8px; /* Bords arrondis pour un look moderne */
     border: solid;
     text-align: center;
-    font-size: 20px;
+    font-size: $font20;
 }
 
 .gif-box {
@@ -110,7 +111,7 @@ header {
 }
 
 .progress-number {
-    font-size: 20px;
+    font-size: $font20;
 }
 
 .left-number {
@@ -150,7 +151,7 @@ svg {
 }
 
 text {
-    font-size: 20px; /* Ajustez selon la taille souhaitée */
+    font-size: $font20; /* Ajustez selon la taille souhaitée */
     fill: $pink; /* Couleur du texte */
     letter-spacing: 5.5px;
     stroke: black; /* Couleur du contour du texte */
@@ -173,6 +174,15 @@ text {
 .text-below-circle {
     text-align: center; /* Centre le texte horizontalement */
     font-size: 60px; /* Taille du texte */
-    margin-top: 200px; /* Espace au-dessus du texte */
+    margin-top: 120px; /* Espace au-dessus du texte */
     color: black; /* Couleur du texte */
+}
+
+.movable-image img {
+    position: relative;
+    /* Exemple de déplacement initial */
+    top: -330px; /* Déplace l'image 20 pixels vers le bas par rapport à sa position initiale */
+    left: 20px; /* Déplace l'image 20 pixels vers la droite par rapport à sa position initiale */
+    width: 100px; /* Ajustez selon la taille souhaitée */
+    height: auto; /* Garde le ratio de l'image */
 }

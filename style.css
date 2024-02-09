@@ -167,6 +167,15 @@ text {
 .text-below-circle {
   text-align: center; /* Centre le texte horizontalement */
   font-size: 60px; /* Taille du texte */
-  margin-top: 200px; /* Espace au-dessus du texte */
+  margin-top: 120px; /* Espace au-dessus du texte */
   color: black; /* Couleur du texte */
+}
+
+.movable-image img {
+  position: relative;
+  /* Exemple de déplacement initial */
+  top: -330px; /* Déplace l'image 20 pixels vers le bas par rapport à sa position initiale */
+  left: 20px; /* Déplace l'image 20 pixels vers la droite par rapport à sa position initiale */
+  width: 100px; /* Ajustez selon la taille souhaitée */
+  height: auto; /* Garde le ratio de l'image */
 }/*# sourceMappingURL=style.css.map */
