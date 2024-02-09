@@ -15,8 +15,19 @@
     <script src="script.js"></script>
     <div class="main-container">
         <div class="column left-column">
-            <!-- Contenu de la colonne de gauche -->
-            Contenu gauche
+            <div class="circle-container">
+                <div class="circle">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path id="circlePath" fill="none" d="M50,10 a40,40 0 1,0 0,80 a40,40 0 1,0 0,-80"/>
+                        <text>
+                            <textPath xlink:href="#circlePath" startOffset="50%" text-anchor="middle" dominant-baseline="central">
+                                Joyeux anniversaire
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+            
         </div>
         <div class="column right-column">
                 <!-- Cadre pour le texte -->

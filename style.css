@@ -36,7 +36,6 @@ header {
 .column {
   flex: 1; /* Cela assure que chaque colonne ait une largeur égale */
   padding: 20px; /* Espace intérieur pour le contenu de chaque colonne */
-  height: 100%; /* S'étend sur toute la hauteur disponible */
   overflow-y: auto; /* Ajoute un défilement si le contenu dépasse la hauteur */
 }
 
@@ -120,4 +119,33 @@ header {
 .citation {
   text-align: right;
   margin: 3px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 320px;
+  height: 320px;
+  background-color: white;
+  border-radius: 50%; /* Rend le div parfaitement rond */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.932); /* Ombre uniquement sur le côté gauche */
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  transform: rotate(-90deg); /* Ajuste l'orientation du texte */
+}
+
+text {
+  font-size: 20px; /* Ajustez selon la taille souhaitée */
+  fill: black; /* Couleur du texte */
+  letter-spacing: 5.5px;
 }/*# sourceMappingURL=style.css.map */
