@@ -1,0 +1,128 @@
+$pink : #DF80AC;
+
+@font-face {
+    font-family: 'Bison'; 
+    src: url('./fonts/Bison.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bison', sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 25px 0;
+    border-bottom: solid;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    font-size: 30px;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 60px); /* Ajustez 60px en fonction de la hauteur de votre header */
+}
+
+.column {
+    flex: 1; /* Cela assure que chaque colonne ait une largeur égale */
+    padding: 20px; /* Espace intérieur pour le contenu de chaque colonne */
+    height: 100%; /* S'étend sur toute la hauteur disponible */
+    overflow-y: auto; /* Ajoute un défilement si le contenu dépasse la hauteur */
+}
+
+.left-column {
+    background-color: $pink; /* Couleur de fond pour la colonne de gauche */
+}
+
+.right-column {
+    background-color: #e8e8e8; /* Couleur de fond pour la colonne de droite */
+}
+
+.text-box, .gif-box {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px $pink; /* Ajoute une ombre pour un effet de profondeur */
+    border-radius: 8px; /* Bords arrondis pour un look moderne */
+    border: solid;
+    text-align: center;
+    font-size: 20px;
+}
+
+.gif-box {
+    text-align: center; /* Centre le GIF dans le cadre */
+}
+
+.taille {
+    width: 400px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.infinite-progress {
+    width: 0; /* Départ de l'animation */
+    height: 100%;
+    background-color: #4CAF50; /* Couleur de remplissage */
+    border-radius: 10px; /* Bord arrondi pour la progression */
+    animation: loading 9s infinite ease-in-out; /* Nom de l'animation, durée, répétition, type d'animation */
+}
+
+
+.progress-bar {
+    flex-grow: 1; /* Permet à la barre de prendre toute la largeur disponible */
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 0 10px; /* Espacement autour de la barre de progression */
+    overflow: hidden; /* Garde la progression interne arrondie */
+}
+
+.progress {
+    width: 82%; /* Remplissage à trois quarts */
+    height: 100%;
+    background-color: $pink; /* Couleur de remplissage */
+    border-radius: 10px; /* Bord arrondi pour la progression */
+}
+
+.progress-number {
+    font-size: 20px;
+}
+
+.left-number {
+    margin-right: 10px;
+}
+
+.right-number {
+    margin-left: 10px;
+}
+
+.citation {
+    text-align: right;
+    margin: 3px;
+}
+
