@@ -178,11 +178,29 @@ text {
     color: black; /* Couleur du texte */
 }
 
-.movable-image img {
+.movable-image {
     position: relative;
     /* Exemple de déplacement initial */
     top: -330px; /* Déplace l'image 20 pixels vers le bas par rapport à sa position initiale */
     left: 20px; /* Déplace l'image 20 pixels vers la droite par rapport à sa position initiale */
+    width: 100px; /* Ajustez selon la taille souhaitée */
+    height: auto; /* Garde le ratio de l'image */
+}
+
+.movable-image2 {
+    position: relative;
+    /* Exemple de déplacement initial */
+    top: -250px; /* Déplace l'image 20 pixels vers le bas par rapport à sa position initiale */
+    left: 470px; /* Déplace l'image 20 pixels vers la droite par rapport à sa position initiale */
+    width: 100px; /* Ajustez selon la taille souhaitée */
+    height: auto; /* Garde le ratio de l'image */
+}
+
+.movable-image3 {
+    position: relative;
+    /* Exemple de déplacement initial */
+    top: 50px; /* Déplace l'image 20 pixels vers le bas par rapport à sa position initiale */
+    left: -50px; /* Déplace l'image 20 pixels vers la droite par rapport à sa position initiale */
     width: 100px; /* Ajustez selon la taille souhaitée */
     height: auto; /* Garde le ratio de l'image */
 }
